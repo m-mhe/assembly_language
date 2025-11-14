@@ -1,0 +1,7 @@
+start:
+ADD AL, 0x69 ; Means AL = AL + 0x69/105
+ADD AH, AL
+ADD BX, AX
+ADD BX, 10
+MOV AX, 0
+MOV BX, 0

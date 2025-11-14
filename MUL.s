@@ -1,0 +1,7 @@
+start:
+MOV BL, 2
+MOV AL, 5
+MUL BL ; Means AX = AX * BL
+MOV BX, 0xFFFF
+MUL BX
+MUL AX

@@ -1,0 +1,9 @@
+start:
+SUB AL, 0x69 ; Means AL = AL - 0x69/105
+SUB AH, AL
+SUB BX, AX
+SUB BX, 10
+SUB DX, AX
+MOV AX, 0
+MOV BX, 0
+MOV DX, 0
