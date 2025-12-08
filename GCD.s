@@ -1,0 +1,15 @@
+;GCD
+
+start:
+MOV AX, 150
+MOV BX, 25
+
+FIND_GCD:
+    DIV BX
+    CMP DX, 0
+    JZ END
+    MOV AX, BX
+    MOV BX, DX
+    JMP FIND_GCD
+END:
+    MOV AX, BX
