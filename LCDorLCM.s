@@ -9,6 +9,8 @@ FindGCD:
     CMP AH, 0
     JZ FindLCM
     XCHG AH, BL
+    XCHG AH, AL
+    MOV AH, 00
     JMP FindGCD
     
 FindLCM:
